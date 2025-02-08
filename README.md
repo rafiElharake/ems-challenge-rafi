@@ -120,7 +120,7 @@ The stack is already implemented for you:
 
 5- Add new seed data by modifying [`./scripts/seed.js`](https://github.com/edi2xml/ems-challenge/blob/main/scripts/seed.js)
 
-6- Seed the db by running `npm run seed_db`
+6- Seed the db by running `npm run seed`
 
 7- Run the development server with `npm run dev`
 
