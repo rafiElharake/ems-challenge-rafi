@@ -1,12 +1,19 @@
-import { redirect } from "react-router"
-
 export async function loader() {
-  // This redirects to the employees page.
-  // If you want to create a home page with navigation buttons
-  // to the employees page, you can remove the redirection.
-  return redirect("/employees")
+  // No need to return anything from the loader in this case
+  return null;
 }
 
 export default function RootPage() {
-  return <></>
+  return (
+    <div>
+      <h1>Welcome to the EMS Challenge</h1>
+      <nav>
+        <ul>
+          <li><a href="/employees">Employees</a></li>
+          <li><a href="/timesheets">Timesheets</a></li>
+          <li><a href="/employees/new">New Employee</a></li>
+        </ul>
+      </nav>
+    </div>
+  );
 }
